@@ -94,3 +94,13 @@ footer {
   font-size: 20px;
   cursor: pointer;
 }
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header .logo img {
+  height: 70px; /* tamanho da logo */
+  display: block;
+  margin: 0 auto;
+}

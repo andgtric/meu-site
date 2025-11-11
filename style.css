@@ -111,3 +111,16 @@ footer {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+header h1 {
+  color: white; /* muda o texto "Ribebe" pra branco */
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header {
+  background-color: #f8bcbc; /* rosa salmão suave */
+  text-align: center;
+  padding: 40px 10px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}

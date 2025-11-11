@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ribebe - Moda Bebê</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ribebe - Roupinhas de Bebê</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Ribebe</h1>
-    <p>Roupinhas de bebê com amor e conforto 👶🩷</p>
+    <p>Roupinhas de bebê com amor e conforto 👶💗</p>
   </header>
 
-  <section class="produtos">
+  <section class="roupinhas">
     <h2>Nossas Roupinhas</h2>
     <div class="galeria">
-      <div class="item">
-        <img src="https://via.placeholder.com/250x250?text=Body+Rosa" alt="Body Rosa" />
-        <p>Body Rosa - 100% algodão</p>
+      <div class="item" onclick="abrirModal('bodyRosa')">
+        <img src="body.jpg" alt="Body Rosa">
+        <p>Body Rosa</p>
       </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/250x250?text=Macacão+Azul" alt="Macacão Azul" />
-        <p>Macacão Azul - Tecido leve e confortável</p>
+      <div class="item" onclick="abrirModal('macacaoAzul')">
+        <img src="macacao.jpg" alt="Macacão Azul">
+        <p>Macacão Azul</p>
       </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/250x250?text=Conjunto+Ursinho" alt="Conjunto Ursinho" />
-        <p>Conjunto Ursinho - Ideal para dias frios</p>
+      <div class="item" onclick="abrirModal('conjuntoUrsinho')">
+        <img src="conjunto.jpg" alt="Conjunto Ursinho">
+        <p>Conjunto Ursinho</p>
       </div>
     </div>
   </section>
 
   <section class="sobre">
     <h2>Sobre Nós</h2>
-    <p>
-      A Ribebe é uma marca familiar especializada em roupas de bebê, feitas com amor, conforto e qualidade. 
-      Nosso foco é atender revendedores e mamães que buscam produtos com o melhor custo-benefício.
-    </p>
+    <p>Somos uma empresa especializada em roupinhas de bebê, feitas com amor, conforto e qualidade. Nosso foco é atender revendedores e mamães que buscam o melhor para seus pequenos 💕.</p>
   </section>
 
   <section class="contato">
     <h2>Contato</h2>
-    <div class="botoes">
-      <a href="https://wa.me/5511999999999" target="_blank" class="btn whatsapp">📞 WhatsApp</a>
-      <a href="https://instagram.com/ribebe" target="_blank" class="btn instagram">📸 Instagram</a>
-    </div>
+    <a href="https://wa.me/55SEUNUMERO" target="_blank">📞 WhatsApp</a>
+    <a href="https://instagram.com/SEUINSTAGRAM" target="_blank">📷 Instagram</a>
   </section>
 
   <footer>
     <p>© 2025 Ribebe. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Modais -->
+  <div id="bodyRosa" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal('bodyRosa')">&times;</span>
+      <h3>Body Rosa</h3>
+      <p>100% algodão, macio e confortável. Ideal para o dia a dia do bebê.</p>
+    </div>
+  </div>
+
+  <div id="macacaoAzul" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal('macacaoAzul')">&times;</span>
+      <h3>Macacão Azul</h3>
+      <p>Tecido leve e aconchegante. Perfeito para noites fresquinhas.</p>
+    </div>
+  </div>
+
+  <div id="conjuntoUrsinho" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal('conjuntoUrsinho')">&times;</span>
+      <h3>Conjunto Ursinho</h3>
+      <p>Conjunto fofo com estampa de ursinho, ideal para passeios.</p>
+    </div>
+  </div>
+
+  <script>
+    function abrirModal(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+    function fecharModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
 </body>
 </html>

@@ -99,7 +99,7 @@ header {
   margin-bottom: 20px;
 }
 header .logo img {
-  height: 50px; /* diminui a altura da logo */
+  height: 70px; /* diminui a altura da logo */
   width: auto;  /* mantém proporção da imagem */
   display: block;
   margin: 0 auto;

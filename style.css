@@ -13,6 +13,10 @@ body {
 
 /* Topo */
 header.topo {
+  display: flex;
+  flex-direction: column; /* Coloca logo e texto em coluna */
+  align-items: center;    /* Centraliza horizontalmente */
+  justify-content: center;
   text-align: center;
   padding: 20px;
   background-color: #ffb6c1;
@@ -22,11 +26,10 @@ header.topo {
 }
 
 header .logo img {
-  height: 85px;
-  margin-bottom: 10px;
-border-radius: 15px;
-object-fit: cover;
-}
+  height: 100px;           /* Aumenta um pouco a logo */
+  border-radius: 20px;     /* Bordas suaves */
+  object-fit: cover;
+  margin-bottom: 10px;     /* Espaço entre logo e texto */}
 
 /* Seções */
 section {
